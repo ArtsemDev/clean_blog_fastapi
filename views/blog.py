@@ -25,7 +25,7 @@ def send_email(to: str, message: str):
     mailserver.ehlo()
     mailserver.starttls()
     mailserver.ehlo()
-    mailserver.login('pratayeu@yandex.ru', 'ljzlwbhdzmdpdrbg')
+    mailserver.login('pratayeu@yandex.ru', 'APP_PASSWORD')
     mailserver.sendmail('pratayeu@yandex.ru', to, msg.as_string())
 
 
