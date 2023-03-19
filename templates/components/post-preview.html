@@ -1,0 +1,12 @@
+<div class="post-preview">
+    <a href="{{ url_for('post_detail', post_slug=post.slug) }}">
+        <h2 class="post-title">{{ post.title|upper }}</h2>
+    </a>
+    <p class="post-meta">
+        Posted by
+        <a href="#!">Start Bootstrap</a>
+        {{ post.date_created|datetimeformat("%H:%M %d.%m.%y") }}
+    </p>
+</div>
+<!-- Divider-->
+<hr class="my-4" />
